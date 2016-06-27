@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Brayan Camargo</title>
+	<meta charset="UTF-8">
+	<title>Brayan Camargo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+	<form id="contacto" action="//formspree.io/brayan440@hotmail.com" method="POST">
+		<h2>
+			Contacto:
+		</h2>
+		<input type="hidden" name="_Asunto" value="Contacto Code-pen"/>
+		<input type="text" name="name" placeholder="Your name"/>
+		<input type="email" name="_replyto" placeholder="Your email"/>
+		<textarea name="message" placeholder="Your message"></textarea>
+		<input type="submit" value="Send"/>
+	</form>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+// ↓↓↓↓↓↓↓____ Esto solo aplica clases de estilos, no afecta el funcionamiento ____ ↓↓↓↓↓↓↓
+$(document).ready(function(){
+	$("textarea").addClass("materialize-textarea")
+	$("input[type='submit']").addClass("btn waves-effect waves-light")
+})
+</script>
 </html>
